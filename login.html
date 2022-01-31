@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+
+/*帳密字體設定*/
+h1{
+  text-align:center;
+  font-family:Microsoft JhengHei;
+  font-size:15px;
+}
+
+/*頁面標題設定*/
+h2{
+  padding-top: 100px;
+  text-align:center;
+  font-family:Didot;
+  font-size:50px;
+  text-decoration: none;
+}
+
+/*設定背景圖片*/
+body
+{
+background:url("back1.png");
+background-size:1280px 800px;
+background-repeat:no-repeat;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+  border: 1px;
+  border-radius: 5px;
+  border-style:solid;
+}
+
+input:focus{
+  outline-color: #FFD306;
+  border-style: solid;
+}
+
+select {
+  height: 25px;
+  width: 130px;
+  border-radius: 5px;
+}
+
+
+input[type="submit"]{
+  width: 70px;
+  height: 30px;
+  background-color: #FFD306;
+  border-radius: 30px;
+  border-color: none;
+  text-decoration: none;
+}
+
+input[type="button"]{
+  width: 90px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  border-color: none;
+  text-decoration: none;
+}
+
+td a{
+  font-size: 15px;
+  color: #6C6C6C;
+}
+
+select {
+  height: 25px;
+  width: 130px;
+  border-radius: 5px;
+}
+
+</style>
+
+<title>登入</title>
+</head>
+<body>
+  <h2>Login</h2>
+
+<form action="login.php" method="post" >
+        <table  align="center">
+            <tr>
+                <td><h1>*帳號:</h1></td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td><h1>*密碼 :</h1><br></td>
+                <td><input type="password" name="password"><br><br></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="login" value="登入">
+                    <input type="button" value="訪客登入" onclick="location.href='http://localhost/預約場地系統_v2/visiter.php'"></td>`
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"><a href="http://localhost/預約場地系統_v2/register.html" class="reg">註冊</a></td>
+            </tr>
+        </table>
+    </form>
+</body>

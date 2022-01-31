@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+
+/*帳密字體設定*/
+h1{
+  text-align:center;
+  font-family:Microsoft JhengHei;
+  font-size:15px;
+}
+
+/*頁面標題設定*/
+h2{
+  padding-top: 100px;
+  text-align:center;
+  font-family:Didot;
+  font-size:50px;
+}
+
+/*設定背景圖片*/
+body
+{
+background:url("back3.png");
+background-size:1280px 800px;
+background-repeat:no-repeat;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+  border: 1px;
+  border-radius: 5px;
+  background-color:#E0E0E0;
+}
+
+input:focus{
+  outline-color: #FFD306;
+  border-style: solid;
+}
+
+select {
+  height: 25px;
+  width: 130px;
+  border-radius: 5px;
+}
+
+
+input[type="submit"]{
+  width: 70px;
+  height: 30px;
+  background-color: #FFD306;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+</style>
+
+
+  <meta charset="UTF-8">
+  <title>註冊</title>
+</head>
+<body>
+  <h2>Register</h2>
+  <form action="register.php" method="POST">
+        <table  align="center">
+            <tr>
+                <td><h1>帳號（學號）:</h1></td>
+                <td><input type="text" name="Username" size="15" /></td>
+            </tr>
+            <tr>
+                <td><h1>設定密碼 :</h1></td>
+                <td><input type="password" name="Password" size="15" /></td>
+            </tr>
+            <tr>
+                <td><h1>姓名 :</h1></td>
+                <td><input type="text" name="name" size="15" /></td>
+            </tr>
+            <tr>
+                <td><h1>email :</h1></td>
+                <td><input type="text" name="email" size="15"/></td>
+            </tr>
+            <tr>
+                <td><h1>使用者身份:</h1></td>
+                <td><select name="status">
+                    <option values="A1">學生</option>
+                    <option values="A2">教師-非管理員</option>
+                    <option values="A3">教師-管理員</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="註冊"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
