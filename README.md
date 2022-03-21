@@ -1,2 +1,2 @@
 # Court-reservation-system
-場地預約管理系統
+Build a Court reservation interface and the database to simulate a real court reservation.
